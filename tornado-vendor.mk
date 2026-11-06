@@ -6,6 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/tornado
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -674,6 +677,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/superlowlightsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/superlowlightsnapshot.json \
     vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/uwsuperlowlightshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/uwsuperlowlightshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -691,7 +698,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -703,27 +714,39 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.lct_touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lct_touch.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.thn31.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thn31.nfc.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wifi_ant_check.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wifi_ant_check.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/miteelog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/miteelog.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mrm_mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mrm_mitee.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
     vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
@@ -737,46 +760,129 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/xiaomi/tornado/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-arvr.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-mgame.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-normal.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-huanji.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-huanji.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/disable_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/disable_thermal_temp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal_temp.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/disable_throttling.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_throttling.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/thermal_mtbf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_mtbf.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/tp_mfnr/IQParam.bin:$(TARGET_COPY_OUT_VENDOR)/etc/tp_mfnr/IQParam.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/tp_sfnr/IQParam.bin:$(TARGET_COPY_OUT_VENDOR)/etc/tp_sfnr/IQParam.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/xiaomi/tornado/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/xiaomi/tornado/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest.ini \
     vendor/xiaomi/tornado/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
-    vendor/xiaomi/tornado/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6627_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_coeff.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6627_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_patch.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6630_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v1_coeff.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6630_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v1_patch.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6630_fm_v2_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_coeff.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6630_fm_v2_coeff_tx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_coeff_tx.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6630_fm_v2_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_patch.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6630_fm_v2_patch_tx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_patch_tx.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_coeff.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_patch.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6632_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6632_fm_v1_coeff.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6632_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6632_fm_v1_patch.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6635_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_coeff.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/mt6635_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_patch.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/novatek_ts_truly_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_truly_fw.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/novatek_ts_truly_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_truly_mp.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/soc_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_coeff.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/3d08821c-33a6-11e6-a1fa089e01c83aa2.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/3d08821c-33a6-11e6-a1fa089e01c83aa2.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/4d573443-6a56-4272-ac6f2425af9ef9bb.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/4d573443-6a56-4272-ac6f2425af9ef9bb.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/511ead0a-0000-0000-0000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/511ead0a-0000-0000-0000000000000000.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/59a4867c-9fe5-f7c2-b409a46bae6ff73e.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/59a4867c-9fe5-f7c2-b409a46bae6ff73e.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/655a4b46-cd77-11ea-aafbf382a6988e7b.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/655a4b46-cd77-11ea-aafbf382a6988e7b.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/68bcd09d-4101-4c0a-9552ed0af9ae16b2.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/68bcd09d-4101-4c0a-9552ed0af9ae16b2.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/7b30b820-a9ea-11e5-b1780002a5d5c51b.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/7b30b820-a9ea-11e5-b1780002a5d5c51b.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/86f623f6-a299-4dfd-b560ffd3e5a62c29.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/86f623f6-a299-4dfd-b560ffd3e5a62c29.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/88ce8e6b-8646-4092-bb78faf5b55ff4df.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/88ce8e6b-8646-4092-bb78faf5b55ff4df.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/8aaaf201-2460-0000-7143fe4f7c823c80.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/8aaaf201-2460-0000-7143fe4f7c823c80.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/9811c1f6-47e3-5cea-ae6ef62ba433c4fd.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/9811c1f6-47e3-5cea-ae6ef62ba433c4fd.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta \
+    vendor/xiaomi/tornado/proprietary/vendor/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta
 
 PRODUCT_PACKAGES += \
-    arm.graphics-V3-ndk \
+    7816-3-T1 \
+    APUWareApusysAidlServer \
+    APUWareUtilsServer \
     com.xiaomi.plugin.morphohdr \
+    libGLES_meow \
     libGLES_mali \
-    android.hardware.camera.provider@2.6-impl-mediatek \
+    gc50f6_txd_main_iii_mipi_raw_global_IdxMgr \
     android.hardware.gnss-impl-mediatek \
+    android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mt6835 \
     audio.r_submix.mt6835 \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     fingerprint.silead.default \
-    gatekeeper.default \
     gatekeeper.mitee \
     gps.default \
     hwcomposer.mtk_common \
+    android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     gralloc.common \
-    vendor.mediatek.hardware.pq_aidl-impl \
-    vulkan.mali \
-    sensors.mediatek.V2.0 \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
+    vendor.mediatek.hardware.pq_aidl-impl \
+    vulkan.mali \
+    sensors.mediatek.V2.0 \
+    vendor.mediatek.hardware.mms@1.7-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     vendor.xiaomi.hardware.micharge@1.0-impl \
+    lc_algoutils \
+    lib3a.ae.pipe \
     libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face10 \
     libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face2 \
     libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face4 \
@@ -787,12 +893,47 @@ PRODUCT_PACKAGES += \
     libCamera_sc1320cstrulymainimipiraw_Zoom_Capture_face10 \
     libCamera_sc1320cstrulymainimipiraw_Zoom_Capture_face2 \
     libCamera_sc1320cstrulymainimipiraw_Zoom_Capture_face4 \
+    libCamera_sc520trulyfrontimipiraw_3rd_MTXX \
+    libCamera_sc520trulyfrontimipiraw_3rd_QQ \
+    libCamera_sc520trulyfrontimipiraw_3rd_SIZE_05 \
+    libCamera_sc520trulyfrontimipiraw_3rd_SIZE_07 \
+    libCamera_sc520trulyfrontimipiraw_3rd_SIZE_09 \
+    libCamera_sc520trulyfrontimipiraw_3rd_SIZE_10 \
+    libCamera_sc520trulyfrontimipiraw_3rd_Wechat_SIZE_05 \
+    libCamera_sc520trulyfrontimipiraw_3rd_Wechat_SIZE_10 \
+    libCamera_sc520trulyfrontimipiraw_3rd_douyin_SIZE_05 \
+    libCamera_sc520trulyfrontimipiraw_3rd_douyin_SIZE_09 \
+    libCamera_sc520trulyfrontimipiraw_3rd_douyin_SIZE_10 \
+    libCamera_sc520trulyfrontimipiraw_Face_Capture \
+    libCamera_sc520trulyfrontimipiraw_Face_Preview \
+    libCamera_sc520trulyfrontimipiraw_HDR_Capture \
+    libCamera_sc520trulyfrontimipiraw_HDR_Capture_Dark \
+    libCamera_sc520trulyfrontimipiraw_HDR_XM_Capture \
+    libCamera_sc520trulyfrontimipiraw_LCD_Capture \
+    libCamera_sc520trulyfrontimipiraw_LCD_Preview \
+    libCamera_sc520trulyfrontimipiraw_Portrait_Capture \
+    libCamera_sc520trulyfrontimipiraw_Scene_Capture \
+    libCamera_sc520trulyfrontimipiraw_Scene_Preview \
+    libCamera_sc520trulyfrontimipiraw_Se_Capture_Dark \
+    libCamera_sc520trulyfrontimipiraw_Se_XM_Capture \
+    libCamera_sc520trulyfrontimipiraw_SuperNS_Capture_Dark \
+    libCamera_sc520trulyfrontimipiraw_SuperNS_XM_Capture \
+    libCamera_sc520trulyfrontimipiraw_Video_1080P \
+    libCamera_sc520trulyfrontimipiraw_XTS \
     libDR \
+    libJpgEncPipe \
+    libMiVideoFilter \
     libMtkSpeechEnh \
+    libOpenCL \
+    libSQLiteModule_VER_ALL \
+    libTEECommon \
+    libTrueSight \
     lib_iir \
+    libaal_cust \
+    libaal_key \
     libaal_mtk \
-    libaalservice \
-    libaiselector \
+    libadpcmdec_mtk \
+    libalacdec_mtk \
     libalsautils-stock \
     libanc_fullhdr \
     libanc_night \
@@ -800,6 +941,14 @@ PRODUCT_PACKAGES += \
     libanc_single_bokeh \
     libanc_single_bokeh_rear \
     libanc_single_rt_bokeh \
+    libapu_mdw \
+    libapu_mdw_batch \
+    libapusys \
+    libarmnn \
+    libarmnn_ndk.mtk.vndk \
+    libasn1c_core \
+    libasn1c_mapi \
+    libasn1c_mdmi \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -816,31 +965,30 @@ PRODUCT_PACKAGES += \
     libblisrc32_vendor \
     libbluetooth_audio_session_aidl_mediatek \
     libbluetooth_mtk \
+    libbluetooth_mtk_pure \
     libbt-vendor \
     libbwc \
-    libcam.halisp.buf \
-    libcam.halisp.common \
-    libcam.halisp \
-    libcam.isptuning \
-    libcamalgo.ispfeature \
-    libcamdrv_isp \
-    libcamera.custom.pd_buf_mgr \
-    libcamera.customae \
-    libcamera.customaf \
-    libcamera.customawb \
-    libcamera.customflk \
+    libc++_shared \
+    libcam.seninfn3d \
+    libcamalgo.3dnr \
+    libcamalgo.InlineCompGyro \
+    libcamalgo.WarpMapResizer \
+    libcamalgo.dngop \
+    libcamalgo.fdft \
+    libcamalgo.hdr10p \
+    libcamalgo.nr \
+    libcamalgo.platform \
+    libcamalgo.utility \
+    libcamalgo.vsdofUtil \
+    libcamalgo.warp \
     libcamera_scene \
-    libcameracustom.camera.3a \
-    libcameracustom.camera.isp \
-    libcameracustom.camera.sensors \
-    libcameracustom.camera_exif \
-    libcameracustom.eis \
-    libcameracustom.flashlight \
-    libcameracustom.lens \
-    libcameracustom.plugin \
-    libcameracustom \
     libcameraopt \
+    libcapctrl \
+    libcares_naptr \
+    libcarrierconfig \
     libccci_util \
+    libcmdl \
+    libcmdl_ndk.mtk.vndk \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
@@ -853,16 +1001,12 @@ PRODUCT_PACKAGES += \
     libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
+    libcom.xiaomi.pluginutils \
     libcomposer_ext \
     libconnfem \
     libcustom_nvram \
     libcvsd_mtk \
-    libdip_drv \
-    libdip_postproc \
     libdisplaylog \
-    libdpframework \
-    libfeature.face \
-    libfeatureiodrv_mem \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
@@ -878,27 +1022,254 @@ PRODUCT_PACKAGES += \
     libgralloctypes_mtk \
     libgwsdv2-ril \
     libgwsdv3-ril \
+    libgz_gp_client \
+    libgz_uree \
+    libhdrvideo \
+    libheichal \
     libhfmanager \
+    libhfmanagerwrapper \
     libhwm \
     libifcutils_mtk \
+    libimagebuffer_wrapper \
+    libimgsensorca \
     libion_mtk \
     libion_ulit \
+    libipsec_ims_shr \
     libispcameraca \
+    libjpeg-alpha-oal_vendor \
+    libjpeg-alpha_vendor \
     libksensor \
+    libmi_bokehpre \
+    libmialgo_ai_vision \
+    libmialgo_sd \
+    libmialgo_utils \
     libmifpext \
     libmipc \
     libmiriskmanager_mitee \
     libmisight \
     libmisound \
+    libmmagent \
     libmml \
+    libmmprofile \
+    libmnetlink_v104 \
     libmnl_mtk \
     libmorpho_HdrChecker \
     libmorpho_ImageRefiner \
+    libmp3dec_mtk \
+    libmpbase \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkares \
     libmtkcam.MITPS \
+    libmtkcam_fdWarpConvert \
+    libmtkcam_fdsan \
+    libmtkcam_fdsan_wrapper \
+    libmtkcam_perfctrl_wrapper \
+    libmtkcam_pipelinepolicy-aov \
+    libmtkconfig \
+    libmtkconfigutils \
+    libmtkcutils \
+    libmtkhardware_legacy \
+    libmtkisp_metadata \
+    libmtkisp_metadata_v2 \
+    libmtklimiter_vendor \
+    libmtkmipc-ril \
+    libmtknetcap \
+    libmtknetutils \
+    libmtkproperty \
+    libmtkrillog \
+    libmtkrilutils \
+    libmtkshifter_vendor \
+    libmtksysutils \
+    libmtktinyxml \
+    libmtkutils \
+    libneuroeara \
+    libneuron_graph_delegate.mtk_vendor \
+    libneuron_platform \
+    libneuron_runtime_vpp.6 \
+    libneuropilot_hal_utils \
+    libnir_neon_driver_ndk.mtk.vndk \
+    libnpagent \
+    libnpagent_server \
+    libnvram \
+    libnvram_sec \
+    libnxp_extamp_intf \
+    liboemcrypto \
+    libpixelflinger \
+    libpqframework \
+    libpqhdrmetaparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlparser \
+    libratconfig \
+    librcs_interface \
+    librcs_volte_core \
+    libremosaic_wrapper \
+    libremosaiclib \
+    librgbwlightsensor \
+    librilfusion \
+    librpc \
+    librt_extamp_intf \
+    libscltm \
+    libsimlock \
+    libsl_fp_impl \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
+    libstorage_otp \
+    libsysenv \
+    libteecli \
+    libtflite_mtk_vendor \
+    libthha \
+    libtranslator_mapi_v3.0 \
+    libtranslator_mdmi_v2.8.2 \
+    libtranslator_utils \
+    libtrm \
+    libudf \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    libvia-ril \
+    libviagpsrpc \
+    libviamipc-ril \
+    libvpu \
+    libwapi \
+    libwifi-hal-mtk \
+    libwifical \
+    libwifinvram \
+    libwifinvramdata \
+    libwifitest \
+    libwpfa \
+    libwvaidl \
+    libxiaomi_mtkril \
+    arm.graphics-V3-ndk \
+    gc05a2_cxt_front_ii_mipi_raw_IdxMgr \
+    gc05a2_cxt_front_ii_mipi_raw_global_IdxMgr \
+    gc05a2_cxt_front_ii_mipi_raw_india_IdxMgr \
+    gc08a8_cxt_front_iii_mipi_raw_IdxMgr \
+    gc08a8_cxt_front_iii_mipi_raw_global_IdxMgr \
+    gc08a8_cxt_front_iii_mipi_raw_india_IdxMgr \
+    gc13a0_ofilm_main_ii_mipi_raw_IdxMgr \
+    gc13a0_ofilm_main_ii_mipi_raw_global_IdxMgr \
+    gc13a0_ofilm_main_ii_mipi_raw_india_IdxMgr \
+    gc50f6_txd_main_iii_mipi_raw_IdxMgr \
+    gc50f6_txd_main_iii_mipi_raw_india_IdxMgr \
+    imx852_ofilm_main_ii_mipi_raw_IdxMgr \
+    imx852_ofilm_main_ii_mipi_raw_global_IdxMgr \
+    imx852_ofilm_main_ii_mipi_raw_india_IdxMgr \
+    lib3a.ae.core \
+    lib3a.ae \
+    lib3a.ae.stat \
+    lib3a.af.assist \
+    lib3a.af.assist.utils \
+    lib3a.af.core \
+    lib3a.af \
+    lib3a.aishutter.models \
+    lib3a.alsflicker \
+    lib3a.awb.core \
+    lib3a.ccudrv \
+    lib3a.ccuif \
+    lib3a.custom.ae \
+    lib3a.dce \
+    lib3a.flash \
+    lib3a.flicker \
+    lib3a.gma \
+    lib3a.lce \
+    lib3a.log \
+    lib3a.n3d3a \
+    lib3a.sensors.color \
+    lib3a.sensors.flicker \
+    libSonyIMX230PdafLibrary \
+    libSonyIMX230PdafLibraryWrapper \
+    libSonyIMX338PdafLibrary \
+    libSonyIMX338PdafLibraryWrapper \
+    libSonyIMX386PdafLibrary \
+    libSonyIMX386PdafLibraryWrapper \
+    libSonyIMX519PdafLibrary \
+    libSonyIMX519PdafLibraryWrapper \
+    libaaa_ltm \
+    libaaa_ltmx \
+    libaal_cust_func \
+    libaalservice \
+    libaiawb_moon \
+    libaiawb_p1ggm \
+    libaiawb_sun \
+    libaiselector \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
+    libcam.afhal \
+    libcam.chdr \
+    libcam.feature_utils \
+    libcam.hal3a.cctsvr \
+    libcam.hal3a.log \
+    libcam.hal3a.v3.ae \
+    libcam.hal3a.v3.ai3a \
+    libcam.hal3a.v3.awb \
+    libcam.hal3a.v3.dng \
+    libcam.hal3a.v3.fsmgr \
+    libcam.hal3a.v3.lscMgr \
+    libcam.hal3a.v3.lsctbl.50 \
+    libcam.hal3a.v3.nvram.50 \
+    libcam.hal3a.v3.platform \
+    libcam.hal3a.v3.resultpool \
+    libcam.hal3a.v3 \
+    libcam.halisp.buf \
+    libcam.halisp.common \
+    libcam.halisp \
+    libcam.halsensor.hwintegration \
+    libcam.halsensor \
+    libcam.iopipe \
+    libcam.isptuning \
+    libcam.pdtblgen \
+    libcam.tuning.cache \
+    libcam.utils.sensorprovider \
+    libcam.vhdr \
+    libcamalgo.eis \
+    libcamalgo.fsc \
+    libcamalgo.gyro \
+    libcamalgo.ispfeature \
+    libcamalgo.lmv \
+    libcamalgo.lsc \
+    libcamalgo.n3d \
+    libcamalgo.platform2 \
+    libcamalgo.rotate \
+    libcamalgo.vsf \
+    libcamdrv_isp \
+    libcamdrv_tuning_mgr \
+    libcamdrv_twin \
+    libcamera.custom.pd_buf_mgr \
+    libcamera.customae \
+    libcamera.customaf \
+    libcamera.customawb \
+    libcamera.customflk \
+    libcameracustom.camera.3a \
+    libcameracustom.camera.isp \
+    libcameracustom.camera.sensors \
+    libcameracustom.camera_exif \
+    libcameracustom.eis \
+    libcameracustom.flashlight \
+    libcameracustom.lens \
+    libcameracustom.plugin \
+    libcameracustom \
+    libdip_drv \
+    libdip_postproc \
+    libdpframework \
+    libeffecthal.base \
+    libfeature.face \
+    libfeature.stereo.provider \
+    libfeature.vsdof.hal \
+    libfeature_3dnr \
+    libfeature_eis \
+    libfeature_fsc \
+    libfeature_lmv \
+    libfeature_rss \
+    libfeatureiodrv_mem \
+    libgpudataproducer \
+    libimageio \
+    libimageio_plat_drv \
+    libimageio_plat_pipe \
+    liblibarm_mali_config_sysprops \
+    liblpcnr \
+    libmsnr \
+    libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \
     libmtkcam.eventcallback \
@@ -922,9 +1293,6 @@ PRODUCT_PACKAGES += \
     libmtkcam_devicesessionpolicy \
     libmtkcam_diputils \
     libmtkcam_exif \
-    libmtkcam_fdWarpConvert \
-    libmtkcam_fdsan \
-    libmtkcam_fdsan_wrapper \
     libmtkcam_fdvt \
     libmtkcam_featurepolicy \
     libmtkcam_featureutils \
@@ -944,7 +1312,6 @@ PRODUCT_PACKAGES += \
     libmtkcam_modulefactory_utils \
     libmtkcam_modulehelper \
     libmtkcam_owe \
-    libmtkcam_perfctrl_wrapper \
     libmtkcam_pipeline \
     libmtkcam_pipeline_fbm \
     libmtkcam_pipelinemodel \
@@ -954,7 +1321,6 @@ PRODUCT_PACKAGES += \
     libmtkcam_pipelinemodel_session \
     libmtkcam_pipelinemodel_utils \
     libmtkcam_pipelinemodel_zsl \
-    libmtkcam_pipelinepolicy-aov \
     libmtkcam_pipelinepolicy-security \
     libmtkcam_pipelinepolicy-smvr \
     libmtkcam_pipelinepolicy \
@@ -968,64 +1334,38 @@ PRODUCT_PACKAGES += \
     libmtkcam_sysutils \
     libmtkcam_tuning_utils \
     libmtkcam_ulog \
-    libmtkconfigutils \
-    libmtkcutils \
-    libmtkhardware_legacy \
-    libmtkisp_metadata \
-    libmtkisp_metadata_v2 \
-    libmtklimiter_vendor \
-    libmtkmipc-ril \
-    libmtknetcap \
-    libmtknetutils \
-    libmtkproperty \
-    libmtkrillog \
-    libmtkrilutils \
-    libmtkshifter_vendor \
-    libmtksysutils \
-    libmtktinyxml \
-    libmtkutils \
-    libneuron_platform \
+    libneuralnetworks_sl_driver_mtk_prebuilt \
+    libneuron_adapter_mgvi \
     libneuron_runtime.6 \
-    libnvram \
-    libnvram_sec \
-    libnxp_extamp_intf \
+    libnir_neon_driver \
+    libpq_cust_base \
     libpq_prot \
-    libpqframework \
-    libpqhdrmetaparser \
     libpqparamparser \
-    libpqsharememory \
-    libpqtuning \
-    libpqxmlparser \
-    libratconfig \
-    librcs_interface \
-    librilfusion \
-    librt_extamp_intf \
-    libsl_fp_impl \
-    libspeech_enh_lib \
-    libspeechparser_vendor \
-    libstorage_otp \
-    libsysenv \
-    libteecli \
-    libtrm \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
-    libvia-ril \
-    libviagpsrpc \
-    libviamipc-ril \
-    libwifical \
-    libwifinvram \
-    libwifinvramdata \
-    libwifitest \
-    libwpfa \
-    libwvaidl \
-    libxiaomi_mtkril \
-    libarm_gralloc_properties_sysprop \
-    libmtk_drvb \
+    libstereoinfoaccessor_vsdof \
+    ov08f_ofilm_front_ii_mipi_raw_IdxMgr \
+    ov08f_ofilm_front_ii_mipi_raw_global_IdxMgr \
+    ov08f_ofilm_front_ii_mipi_raw_india_IdxMgr \
+    s5kjns_truly_main_i_mipi_raw_IdxMgr \
+    s5kjns_truly_main_i_mipi_raw_global_IdxMgr \
+    s5kjns_truly_main_i_mipi_raw_india_IdxMgr \
+    sc1320cs_truly_main_i_mipi_raw_IdxMgr \
+    sc1320cs_truly_main_i_mipi_raw_global_IdxMgr \
+    sc1320cs_truly_main_i_mipi_raw_india_IdxMgr \
+    sc520_truly_front_i_mipi_raw_IdxMgr \
+    sc520_truly_front_i_mipi_raw_global_IdxMgr \
+    sc520_truly_front_i_mipi_raw_india_IdxMgr \
+    sc520_truly_front_i_mipi_raw_tuning \
+    sc820cs_truly_front_i_mipi_raw_IdxMgr \
+    sc820cs_truly_front_i_mipi_raw_global_IdxMgr \
+    sc820cs_truly_front_i_mipi_raw_india_IdxMgr \
     libmtkcam_streaminfo_plugin-p1stt \
     nfc_nci.thn31nfc.tms \
     sensors.touch.detect \
     tms-cos-dl-common \
     tms-cos-dl-ree \
     tms-utils \
+    vendor.mediatek.hardware.apuware.apusys-V1-ndk \
+    vendor.mediatek.hardware.apuware.utils@2.0_vendor \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
@@ -1042,7 +1382,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
+    vendor.mediatek.hardware.clientapi@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mms@1.0 \
@@ -1070,6 +1412,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
     vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.neuropilot.agent@1.0 \
+    vendor.mediatek.hardware.neuropilot.agent@1.1 \
+    vendor.mediatek.hardware.neuropilot.agent@1.2 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.power@1.1 \
@@ -1092,25 +1437,81 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.pq_aidl-V1-ndk \
     vendor.mediatek.hardware.pq_aidl-V3-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.mediatek.hardware.rcs@2.0 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.tms.tmsnfc_aidl-V1-ndk \
     vendor.xiaomi.hardware.micharge@1.0 \
+    vendor.xiaomi.hardware.misauth-V1-ndk \
+    vendor.xiaomi.hardware.mrm-V1-ndk \
     vendor.xiaomi.hardware.wifi.hostapd-V1-ndk \
     vendor.xiaomi.hardware.wifi.supplicant-V1-ndk \
+    libapuwareapusys.mtk \
+    libapuwareapusys_v2.mtk \
+    libapuwarehmp.mtk \
+    libapuwareutils.mtk \
+    libapuwareutils_v2.mtk \
+    libapuwarexrp.mtk \
+    libapuwarexrp_v2.mtk \
+    libarmnn_ndk.mtk \
+    libcmdl_ndk.mtk \
+    libmvpu_cic_ci_compiler.mtk \
+    libmvpu_cic_ci_compiler_25.mtk \
+    libmvpu_clc_14_mvpu_elf_25.mtk \
+    libmvpu_clc_mvpu_elf.mtk \
+    libmvpu_config.mtk \
+    libmvpu_engine.mtk \
+    libmvpu_engine_25.mtk \
+    libmvpu_engine_25_pub.mtk \
+    libmvpu_engine_pub.mtk \
+    libmvpu_pattern.mtk \
+    libmvpu_pattern_25.mtk \
+    libmvpu_pattern_25_pub.mtk \
+    libmvpu_pattern_pub.mtk \
+    libmvpu_runtime.mtk \
+    libmvpu_runtime_25.mtk \
+    libmvpu_runtime_25_pub.mtk \
+    libmvpu_runtime_builtin.mtk \
+    libmvpu_runtime_builtin_25.mtk \
+    libmvpu_runtime_pub.mtk \
+    libmvpuop25_mtk_cv.mtk \
+    libmvpuop25_mtk_nn.mtk \
+    libmvpuop_mtk_cv.mtk \
+    libmvpuop_mtk_nn.mtk \
+    libneuron_graph_delegate.mtk \
+    libneuronusdk_adapter.mtk \
+    libnir_neon_driver_ndk.mtk \
+    libtflite_mtk.mtk \
+    vendor.mediatek.hardware.apuware.apusys-V5-ndk \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.1 \
+    vendor.mediatek.hardware.apuware.hmp@1.0 \
+    vendor.mediatek.hardware.apuware.utils-V1-ndk \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
+    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.xrp-V1-ndk \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@2.0 \
     com.fingerprints.extension \
     android.hardware.identity@4.0-service.mitee.xml \
+    android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
     android.hardware.security.sharedsecret-service.mitee.xml \
     android.hardware.wifi@1.0-service.xml \
+    gnss@2.1-service-mediatek.xml \
     lights-mtk-default.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     manifest_cameraproviderhidl.xml \
+    manifest_hwcomposer.xml \
     manifest_media_c2_V1_1_default.xml \
+    nss-mtk.xml \
     vendor.xiaomi.hardware.micharge@1.0.xml \
     batterysecret \
+    bip_ap \
     ccci_mdinit \
     ccci_rpcd \
+    conninfra_loader \
     fuelgauged \
     fuelgauged_nvram \
     gps_dump \
@@ -1120,16 +1521,22 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-service.mitee@4.0 \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
+    android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.nfc-service-tms \
     android.hardware.security.keymint@2.0-service.mitee \
     android.hardware.wifi@1.0-service-lazy \
     camerahalserver \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     mtkfusionrild \
+    tetheroffloadservice \
+    vendor.mediatek.hardware.mmagent@1.1-service \
+    vendor.mediatek.hardware.mms@1.7-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.silead.hardware.fingerprintext@1.0-service \
     vendor.xiaomi.hardware.micharge@1.0-service \
+    vtservice_hidl \
+    ipsec_mon \
     lc_wifi_sar_client \
     lc_wifi_sar_server \
     mi_thermald \
@@ -1137,20 +1544,247 @@ PRODUCT_PACKAGES += \
     mnld \
     mrmd_mitee \
     mtk_agpsd \
+    muxreport \
     netdagent \
     nvram_daemon \
     panelcolor_bin \
-    tee-supplicant
+    tee-supplicant \
+    volte_clientapi_ua \
+    wmt_launcher \
+    wmt_loader
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
     vendor_lib64_egl_libGLES_mali_so \
+    vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
     vendor_lib64_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
     vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
     vendor_lib64_hw_mapper_mediatek_so \
     vendor_lib64_hw_gralloc_common_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_ccap@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_lomoeffect@1_0-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
     vendor_lib64_hw_vulkan_mali_so \
     vendor_lib64_hw_sensors_mt6835_so \
+    vendor_lib64_arm_graphics-V3-ndk_so \
+    vendor_lib64_gc05a2_cxt_front_ii_mipi_raw_IdxMgr_so \
+    vendor_lib64_gc05a2_cxt_front_ii_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_gc05a2_cxt_front_ii_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_gc08a8_cxt_front_iii_mipi_raw_IdxMgr_so \
+    vendor_lib64_gc08a8_cxt_front_iii_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_gc08a8_cxt_front_iii_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_gc13a0_ofilm_main_ii_mipi_raw_IdxMgr_so \
+    vendor_lib64_gc13a0_ofilm_main_ii_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_gc13a0_ofilm_main_ii_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_gc50f6_txd_main_iii_mipi_raw_IdxMgr_so \
+    vendor_lib64_gc50f6_txd_main_iii_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_imx852_ofilm_main_ii_mipi_raw_IdxMgr_so \
+    vendor_lib64_imx852_ofilm_main_ii_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_imx852_ofilm_main_ii_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_lib3a_ae_core_so \
+    vendor_lib64_lib3a_ae_so \
+    vendor_lib64_lib3a_ae_stat_so \
+    vendor_lib64_lib3a_af_assist_so \
+    vendor_lib64_lib3a_af_assist_utils_so \
+    vendor_lib64_lib3a_af_core_so \
+    vendor_lib64_lib3a_af_so \
+    vendor_lib64_lib3a_aishutter_models_so \
+    vendor_lib64_lib3a_alsflicker_so \
+    vendor_lib64_lib3a_awb_core_so \
+    vendor_lib64_lib3a_ccudrv_so \
+    vendor_lib64_lib3a_ccuif_so \
+    vendor_lib64_lib3a_custom_ae_so \
+    vendor_lib64_lib3a_dce_so \
+    vendor_lib64_lib3a_flash_so \
+    vendor_lib64_lib3a_flicker_so \
+    vendor_lib64_lib3a_gma_so \
+    vendor_lib64_lib3a_lce_so \
+    vendor_lib64_lib3a_log_so \
+    vendor_lib64_lib3a_n3d3a_so \
+    vendor_lib64_lib3a_sensors_color_so \
+    vendor_lib64_lib3a_sensors_flicker_so \
+    vendor_lib64_libSonyIMX230PdafLibrary_so \
+    vendor_lib64_libSonyIMX230PdafLibraryWrapper_so \
+    vendor_lib64_libSonyIMX338PdafLibrary_so \
+    vendor_lib64_libSonyIMX338PdafLibraryWrapper_so \
+    vendor_lib64_libSonyIMX386PdafLibrary_so \
+    vendor_lib64_libSonyIMX386PdafLibraryWrapper_so \
+    vendor_lib64_libSonyIMX519PdafLibrary_so \
+    vendor_lib64_libSonyIMX519PdafLibraryWrapper_so \
+    vendor_lib64_libaaa_ltm_so \
+    vendor_lib64_libaaa_ltmx_so \
+    vendor_lib64_libaal_cust_func_so \
+    vendor_lib64_libaalservice_so \
+    vendor_lib64_libaiawb_moon_so \
+    vendor_lib64_libaiawb_p1ggm_so \
+    vendor_lib64_libaiawb_sun_so \
+    vendor_lib64_libaiselector_so \
+    vendor_lib64_libarm_egl_properties_sysprop_so \
     vendor_lib64_libarm_gralloc_properties_sysprop_so \
-    vendor_lib64_libmtk_drvb_so
+    vendor_lib64_libcam_afhal_so \
+    vendor_lib64_libcam_chdr_so \
+    vendor_lib64_libcam_feature_utils_so \
+    vendor_lib64_libcam_hal3a_cctsvr_so \
+    vendor_lib64_libcam_hal3a_log_so \
+    vendor_lib64_libcam_hal3a_v3_ae_so \
+    vendor_lib64_libcam_hal3a_v3_ai3a_so \
+    vendor_lib64_libcam_hal3a_v3_awb_so \
+    vendor_lib64_libcam_hal3a_v3_dng_so \
+    vendor_lib64_libcam_hal3a_v3_fsmgr_so \
+    vendor_lib64_libcam_hal3a_v3_lscMgr_so \
+    vendor_lib64_libcam_hal3a_v3_lsctbl_50_so \
+    vendor_lib64_libcam_hal3a_v3_nvram_50_so \
+    vendor_lib64_libcam_hal3a_v3_platform_so \
+    vendor_lib64_libcam_hal3a_v3_resultpool_so \
+    vendor_lib64_libcam_hal3a_v3_so \
+    vendor_lib64_libcam_halisp_buf_so \
+    vendor_lib64_libcam_halisp_common_so \
+    vendor_lib64_libcam_halisp_so \
+    vendor_lib64_libcam_halsensor_hwintegration_so \
+    vendor_lib64_libcam_halsensor_so \
+    vendor_lib64_libcam_iopipe_so \
+    vendor_lib64_libcam_isptuning_so \
+    vendor_lib64_libcam_pdtblgen_so \
+    vendor_lib64_libcam_tuning_cache_so \
+    vendor_lib64_libcam_utils_sensorprovider_so \
+    vendor_lib64_libcam_vhdr_so \
+    vendor_lib64_libcamalgo_eis_so \
+    vendor_lib64_libcamalgo_fsc_so \
+    vendor_lib64_libcamalgo_gyro_so \
+    vendor_lib64_libcamalgo_ispfeature_so \
+    vendor_lib64_libcamalgo_lmv_so \
+    vendor_lib64_libcamalgo_lsc_so \
+    vendor_lib64_libcamalgo_n3d_so \
+    vendor_lib64_libcamalgo_platform2_so \
+    vendor_lib64_libcamalgo_rotate_so \
+    vendor_lib64_libcamalgo_vsf_so \
+    vendor_lib64_libcamdrv_isp_so \
+    vendor_lib64_libcamdrv_tuning_mgr_so \
+    vendor_lib64_libcamdrv_twin_so \
+    vendor_lib64_libcamera_custom_pd_buf_mgr_so \
+    vendor_lib64_libcamera_customae_so \
+    vendor_lib64_libcamera_customaf_so \
+    vendor_lib64_libcamera_customawb_so \
+    vendor_lib64_libcamera_customflk_so \
+    vendor_lib64_libcameracustom_camera_3a_so \
+    vendor_lib64_libcameracustom_camera_isp_so \
+    vendor_lib64_libcameracustom_camera_sensors_so \
+    vendor_lib64_libcameracustom_camera_exif_so \
+    vendor_lib64_libcameracustom_eis_so \
+    vendor_lib64_libcameracustom_flashlight_so \
+    vendor_lib64_libcameracustom_lens_so \
+    vendor_lib64_libcameracustom_plugin_so \
+    vendor_lib64_libcameracustom_so \
+    vendor_lib64_libdip_drv_so \
+    vendor_lib64_libdip_postproc_so \
+    vendor_lib64_libdpframework_so \
+    vendor_lib64_libeffecthal_base_so \
+    vendor_lib64_libfeature_face_so \
+    vendor_lib64_libfeature_stereo_provider_so \
+    vendor_lib64_libfeature_vsdof_hal_so \
+    vendor_lib64_libfeature_3dnr_so \
+    vendor_lib64_libfeature_eis_so \
+    vendor_lib64_libfeature_fsc_so \
+    vendor_lib64_libfeature_lmv_so \
+    vendor_lib64_libfeature_rss_so \
+    vendor_lib64_libfeatureiodrv_mem_so \
+    vendor_lib64_libgpudataproducer_so \
+    vendor_lib64_libimageio_so \
+    vendor_lib64_libimageio_plat_drv_so \
+    vendor_lib64_libimageio_plat_pipe_so \
+    vendor_lib64_liblibarm_mali_config_sysprops_so \
+    vendor_lib64_liblpcnr_so \
+    vendor_lib64_libmsnr_so \
+    vendor_lib64_libmtk_drvb_so \
+    vendor_lib64_libmtkcam_atmseventmgr_so \
+    vendor_lib64_libmtkcam_debugwrapper_so \
+    vendor_lib64_libmtkcam_eventcallback_so \
+    vendor_lib64_libmtkcam_featurepipe_capture_so \
+    vendor_lib64_libmtkcam_featurepipe_depthmap_so \
+    vendor_lib64_libmtkcam_featurepipe_streaming_so \
+    vendor_lib64_libmtkcam_featurepipe_vsdof_util_so \
+    vendor_lib64_libmtkcam_logicalmodule_so \
+    vendor_lib64_libmtkcam_3rdparty_core_so \
+    vendor_lib64_libmtkcam_3rdparty_customer_so \
+    vendor_lib64_libmtkcam_3rdparty_mtk_so \
+    vendor_lib64_libmtkcam_3rdparty_so \
+    vendor_lib64_libmtkcam_calibration_convertor_so \
+    vendor_lib64_libmtkcam_calibration_provider_so \
+    vendor_lib64_libmtkcam_debugutils_so \
+    vendor_lib64_libmtkcam_device3_app_so \
+    vendor_lib64_libmtkcam_device3_hal_so \
+    vendor_lib64_libmtkcam_device3_hidl_so \
+    vendor_lib64_libmtkcam_device3_hidlutils_so \
+    vendor_lib64_libmtkcam_device3_utils_so \
+    vendor_lib64_libmtkcam_devicesessionpolicy_so \
+    vendor_lib64_libmtkcam_diputils_so \
+    vendor_lib64_libmtkcam_exif_so \
+    vendor_lib64_libmtkcam_fdvt_so \
+    vendor_lib64_libmtkcam_featurepolicy_so \
+    vendor_lib64_libmtkcam_featureutils_so \
+    vendor_lib64_libmtkcam_fwkutils_so \
+    vendor_lib64_libmtkcam_grallocutils_so \
+    vendor_lib64_libmtkcam_hwnode_so \
+    vendor_lib64_libmtkcam_hwutils_so \
+    vendor_lib64_libmtkcam_imem_so \
+    vendor_lib64_libmtkcam_imgbuf_so \
+    vendor_lib64_libmtkcam_mapping_mgr_so \
+    vendor_lib64_libmtkcam_metadata_so \
+    vendor_lib64_libmtkcam_metastore_so \
+    vendor_lib64_libmtkcam_mfb_so \
+    vendor_lib64_libmtkcam_modulefactory_aaa_so \
+    vendor_lib64_libmtkcam_modulefactory_custom_so \
+    vendor_lib64_libmtkcam_modulefactory_drv_so \
+    vendor_lib64_libmtkcam_modulefactory_utils_so \
+    vendor_lib64_libmtkcam_modulehelper_so \
+    vendor_lib64_libmtkcam_owe_so \
+    vendor_lib64_libmtkcam_pipeline_so \
+    vendor_lib64_libmtkcam_pipeline_fbm_so \
+    vendor_lib64_libmtkcam_pipelinemodel_so \
+    vendor_lib64_libmtkcam_pipelinemodel_adapter_so \
+    vendor_lib64_libmtkcam_pipelinemodel_capture_so \
+    vendor_lib64_libmtkcam_pipelinemodel_isp_so \
+    vendor_lib64_libmtkcam_pipelinemodel_session_so \
+    vendor_lib64_libmtkcam_pipelinemodel_utils_so \
+    vendor_lib64_libmtkcam_pipelinemodel_zsl_so \
+    vendor_lib64_libmtkcam_pipelinepolicy-security_so \
+    vendor_lib64_libmtkcam_pipelinepolicy-smvr_so \
+    vendor_lib64_libmtkcam_pipelinepolicy_so \
+    vendor_lib64_libmtkcam_pipelinepolicy_factory_so \
+    vendor_lib64_libmtkcam_prerelease_so \
+    vendor_lib64_libmtkcam_rsc_so \
+    vendor_lib64_libmtkcam_scenariorecorder_so \
+    vendor_lib64_libmtkcam_stdutils_so \
+    vendor_lib64_libmtkcam_streamutils_so \
+    vendor_lib64_libmtkcam_synchelper_so \
+    vendor_lib64_libmtkcam_sysutils_so \
+    vendor_lib64_libmtkcam_tuning_utils_so \
+    vendor_lib64_libmtkcam_ulog_so \
+    vendor_lib64_libneuralnetworks_sl_driver_mtk_prebuilt_so \
+    vendor_lib64_libneuron_adapter_mgvi_so \
+    vendor_lib64_libneuron_runtime_6_so \
+    vendor_lib64_libnir_neon_driver_so \
+    vendor_lib64_libpq_cust_base_so \
+    vendor_lib64_libpq_prot_so \
+    vendor_lib64_libpqparamparser_so \
+    vendor_lib64_libstereoinfoaccessor_vsdof_so \
+    vendor_lib64_ov08f_ofilm_front_ii_mipi_raw_IdxMgr_so \
+    vendor_lib64_ov08f_ofilm_front_ii_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_ov08f_ofilm_front_ii_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_s5kjns_truly_main_i_mipi_raw_IdxMgr_so \
+    vendor_lib64_s5kjns_truly_main_i_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_s5kjns_truly_main_i_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_sc1320cs_truly_main_i_mipi_raw_IdxMgr_so \
+    vendor_lib64_sc1320cs_truly_main_i_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_sc1320cs_truly_main_i_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_sc520_truly_front_i_mipi_raw_IdxMgr_so \
+    vendor_lib64_sc520_truly_front_i_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_sc520_truly_front_i_mipi_raw_india_IdxMgr_so \
+    vendor_lib64_sc520_truly_front_i_mipi_raw_tuning_so \
+    vendor_lib64_sc820cs_truly_front_i_mipi_raw_IdxMgr_so \
+    vendor_lib64_sc820cs_truly_front_i_mipi_raw_global_IdxMgr_so \
+    vendor_lib64_sc820cs_truly_front_i_mipi_raw_india_IdxMgr_so
