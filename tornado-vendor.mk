@@ -126,7 +126,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/battery_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/battery_info.xml \
-    vendor/xiaomi/tornado/proprietary/vendor/etc/bpf/cameraBpfGpl.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/cameraBpfGpl.o \
     vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_algo_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_algo_cache \
     vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_binary_cache \
     vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_model \
@@ -700,12 +699,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.identity@4.0-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity@4.0-service.mitee.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@2.0-service.rc \
-    vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
-    vendor/xiaomi/tornado/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
@@ -715,7 +712,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wifi_ant_check.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wifi_ant_check.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
-    vendor/xiaomi/tornado/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/miteelog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/miteelog.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mrm_mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mrm_mitee.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
@@ -765,7 +761,6 @@ PRODUCT_PACKAGES += \
     gatekeeper.default \
     gatekeeper.mitee \
     gps.default \
-    gralloc.default \
     hwcomposer.mtk_common \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
@@ -797,7 +792,6 @@ PRODUCT_PACKAGES += \
     lib_iir \
     libaal_mtk \
     libaalservice \
-    libaedv \
     libaiselector \
     libanc_fullhdr \
     libanc_night \
@@ -846,7 +840,6 @@ PRODUCT_PACKAGES += \
     libcameracustom \
     libcameraopt \
     libccci_util \
-    libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
@@ -890,10 +883,7 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     libion_ulit \
     libispcameraca \
-    libkeystore-engine-wifi-hidl \
-    libkeystore-wifi-hidl \
     libksensor \
-    libladder \
     libmifpext \
     libmipc \
     libmiriskmanager_mitee \
@@ -1009,7 +999,6 @@ PRODUCT_PACKAGES += \
     librcs_interface \
     librilfusion \
     librt_extamp_intf \
-    libsensorndkbridge \
     libsl_fp_impl \
     libspeech_enh_lib \
     libspeechparser_vendor \
@@ -1021,7 +1010,6 @@ PRODUCT_PACKAGES += \
     libvia-ril \
     libviagpsrpc \
     libviamipc-ril \
-    libwifi-hal \
     libwifical \
     libwifinvram \
     libwifinvramdata \
@@ -1135,17 +1123,14 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint@2.0-service.mitee \
     android.hardware.wifi@1.0-service-lazy \
     camerahalserver \
-    hostapd \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     mtkfusionrild \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.silead.hardware.fingerprintext@1.0-service \
     vendor.xiaomi.hardware.micharge@1.0-service \
-    wpa_supplicant \
     lc_wifi_sar_client \
     lc_wifi_sar_server \
-    md_monitor \
     mi_thermald \
     miteelog \
     mnld \
