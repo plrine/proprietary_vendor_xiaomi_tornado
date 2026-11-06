@@ -136,6 +136,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     arm.graphics-V3-ndk \
     libGLES_mali \
+    android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mt6835 \
     audio.r_submix.mt6835 \
     gralloc.default \
@@ -145,6 +146,7 @@ PRODUCT_PACKAGES += \
     gralloc.common \
     vendor.mediatek.hardware.pq_aidl-impl \
     vulkan.mali \
+    sensors.mediatek.V2.0 \
     libMtkSpeechEnh \
     lib_iir \
     libaal_mtk \
@@ -180,8 +182,10 @@ PRODUCT_PACKAGES += \
     libgralloc_extra \
     libgralloc_metadata \
     libgralloctypes_mtk \
+    libhfmanager \
     libion_mtk \
     libion_ulit \
+    libksensor \
     libladder \
     libmisight \
     libmisound \
@@ -204,6 +208,7 @@ PRODUCT_PACKAGES += \
     libspeechparser_vendor \
     libarm_gralloc_properties_sysprop \
     libmtk_drvb \
+    sensors.touch.detect \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
@@ -254,5 +259,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_gralloc_common_so \
     vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
     vendor_lib64_hw_vulkan_mali_so \
+    vendor_lib64_hw_sensors_mt6835_so \
     vendor_lib64_libarm_gralloc_properties_sysprop_so \
     vendor_lib64_libmtk_drvb_so
