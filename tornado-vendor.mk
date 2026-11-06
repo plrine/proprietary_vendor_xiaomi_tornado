@@ -715,7 +715,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mrm_mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mrm_mitee.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
@@ -762,6 +764,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
+    vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face10 \
     libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face2 \
@@ -841,6 +844,8 @@ PRODUCT_PACKAGES += \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libcomposer_ext \
+    libconnfem \
+    libcustom_nvram \
     libcvsd_mtk \
     libdip_drv \
     libdip_postproc \
@@ -862,6 +867,7 @@ PRODUCT_PACKAGES += \
     libgwsdv2-ril \
     libgwsdv3-ril \
     libhfmanager \
+    libhwm \
     libion_mtk \
     libion_ulit \
     libispcameraca \
@@ -1052,6 +1058,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
     vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.nvram@1.0 \
+    vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
@@ -1100,6 +1108,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     mtkfusionrild \
+    vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.silead.hardware.fingerprintext@1.0-service \
     wpa_supplicant \
@@ -1111,6 +1120,7 @@ PRODUCT_PACKAGES += \
     mnld \
     mrmd_mitee \
     mtk_agpsd \
+    nvram_daemon \
     tee-supplicant
 
 PRODUCT_PACKAGES += \
