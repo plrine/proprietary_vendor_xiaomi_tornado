@@ -2057,6 +2057,25 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwvaidl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwvaidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarm_gralloc_properties_sysprop",
     owner: "xiaomi",
     strip: {
@@ -3299,6 +3318,46 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     check_elf_files: false,
     prefer: true,
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_android.hardware.drm-service.widevine.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.drm-service.widevine",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.drm-service.widevine",
+            ],
+            shared_libs: [
+                "android.hardware.drm-V1-ndk",
+                "libbase",
+                "liblog",
+                "libutils",
+                "libwvaidl",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
     soc_specific: true,
 }
 

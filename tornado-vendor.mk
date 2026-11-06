@@ -126,6 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.1-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
@@ -206,6 +207,7 @@ PRODUCT_PACKAGES += \
     librt_extamp_intf \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libwvaidl \
     libarm_gralloc_properties_sysprop \
     libmtk_drvb \
     sensors.touch.detect \
@@ -245,6 +247,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.pq_aidl-V1-ndk \
     vendor.mediatek.hardware.pq_aidl-V3-ndk \
+    manifest_android.hardware.drm-service.widevine.xml \
+    android.hardware.drm-service.widevine \
     android.hardware.graphics.composer@3.1-service \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     vendor.mediatek.hardware.pq_aidl-service \
