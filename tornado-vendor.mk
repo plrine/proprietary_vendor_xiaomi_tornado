@@ -125,14 +125,32 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.1-service.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/tornado/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/xiaomi/tornado/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg
 
 PRODUCT_PACKAGES += \
+    arm.graphics-V3-ndk \
+    libGLES_mali \
     audio.primary.mt6835 \
     audio.r_submix.mt6835 \
+    gralloc.default \
+    hwcomposer.mtk_common \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
+    gralloc.common \
+    vendor.mediatek.hardware.pq_aidl-impl \
+    vulkan.mali \
     libMtkSpeechEnh \
     lib_iir \
+    libaal_mtk \
+    libaalservice \
+    libaedv \
+    libaiselector \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -151,28 +169,90 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk \
     libbt-vendor \
     libbwc \
+    libcomposer_ext \
     libcvsd_mtk \
+    libdisplaylog \
+    libdpframework \
     libfile_op \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
+    libion_mtk \
+    libion_ulit \
+    libladder \
     libmisight \
     libmisound \
+    libmml \
     libmsbc_mtk \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
     libnvram \
     libnvram_sec \
     libnxp_extamp_intf \
+    libpq_prot \
+    libpqframework \
+    libpqhdrmetaparser \
+    libpqparamparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlparser \
     librt_extamp_intf \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libarm_gralloc_properties_sysprop \
     libmtk_drvb \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.mmagent@1.0 \
+    vendor.mediatek.hardware.mmagent@1.1 \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mms@1.4 \
+    vendor.mediatek.hardware.mms@1.5 \
+    vendor.mediatek.hardware.mms@1.6 \
+    vendor.mediatek.hardware.mms@1.7 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.10 \
+    vendor.mediatek.hardware.pq@2.11 \
+    vendor.mediatek.hardware.pq@2.12 \
+    vendor.mediatek.hardware.pq@2.13 \
+    vendor.mediatek.hardware.pq@2.14 \
+    vendor.mediatek.hardware.pq@2.15 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
+    vendor.mediatek.hardware.pq@2.7 \
+    vendor.mediatek.hardware.pq@2.8 \
+    vendor.mediatek.hardware.pq@2.9 \
+    vendor.mediatek.hardware.pq_aidl-V1-ndk \
+    vendor.mediatek.hardware.pq_aidl-V3-ndk \
+    android.hardware.graphics.composer@3.1-service \
+    android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
+    vendor.mediatek.hardware.pq_aidl-service \
     mi_thermald
 
 PRODUCT_PACKAGES += \
+    vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
+    vendor_lib64_egl_libGLES_mali_so \
+    vendor_lib64_hw_android_hardware_graphics_allocator@4_0-impl-mediatek_so \
+    vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
+    vendor_lib64_hw_mapper_mediatek_so \
+    vendor_lib64_hw_gralloc_common_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
+    vendor_lib64_hw_vulkan_mali_so \
+    vendor_lib64_libarm_gralloc_properties_sysprop_so \
     vendor_lib64_libmtk_drvb_so
