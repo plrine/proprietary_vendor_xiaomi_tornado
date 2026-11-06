@@ -129,8 +129,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.1-service.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/xiaomi/tornado/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/xiaomi/tornado/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg
 
@@ -172,11 +180,25 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk \
     libbt-vendor \
     libbwc \
+    libcodec2_hidl_plugin \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_soft_mtk_alacdec \
+    libcodec2_soft_mtk_imaadpcmdec \
+    libcodec2_soft_mtk_mp3dec \
+    libcodec2_soft_mtk_msadpcmdec \
+    libcodec2_vpp_AIMEMC_plugin \
+    libcodec2_vpp_AISR_plugin \
+    libcodec2_vpp_mi_plugin \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
     libcomposer_ext \
     libcvsd_mtk \
     libdisplaylog \
     libdpframework \
     libfile_op \
+    libformatter \
     libged \
     libgpu_aux \
     libgpud \
@@ -194,6 +216,8 @@ PRODUCT_PACKAGES += \
     libmsbc_mtk \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
+    libneuron_platform \
+    libneuron_runtime.6 \
     libnvram \
     libnvram_sec \
     libnxp_extamp_intf \
@@ -248,8 +272,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V1-ndk \
     vendor.mediatek.hardware.pq_aidl-V3-ndk \
     manifest_android.hardware.drm-service.widevine.xml \
+    manifest_media_c2_V1_1_default.xml \
     android.hardware.drm-service.widevine \
     android.hardware.graphics.composer@3.1-service \
+    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     vendor.mediatek.hardware.pq_aidl-service \
     mi_thermald
