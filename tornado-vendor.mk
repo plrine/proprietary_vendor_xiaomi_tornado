@@ -793,6 +793,7 @@ PRODUCT_PACKAGES += \
     libaal_mtk \
     libaalservice \
     libaiselector \
+    libalsautils-stock \
     libanc_fullhdr \
     libanc_night \
     libanc_night_preview \
@@ -865,7 +866,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libged \
     libgf_ca \
     libgf_hal \
@@ -890,7 +891,7 @@ PRODUCT_PACKAGES += \
     libmisight \
     libmisound \
     libmml \
-    libmnl \
+    libmnl_mtk \
     libmorpho_HdrChecker \
     libmorpho_ImageRefiner \
     libmsbc_mtk \
