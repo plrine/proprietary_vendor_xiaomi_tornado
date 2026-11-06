@@ -169,7 +169,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    mi_thermald
 
 PRODUCT_PACKAGES += \
     vendor_lib64_libmtk_drvb_so
