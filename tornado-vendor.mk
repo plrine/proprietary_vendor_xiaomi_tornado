@@ -157,12 +157,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/xiaomi/tornado/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/xiaomi/tornado/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
@@ -178,6 +180,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mt6835 \
     audio.r_submix.mt6835 \
+    fingerprint.fpc.default \
+    fingerprint.goodix.default \
+    fingerprint.silead.default \
     gps.default \
     gralloc.default \
     hwcomposer.mtk_common \
@@ -232,6 +237,9 @@ PRODUCT_PACKAGES += \
     libfile_op \
     libformatter \
     libged \
+    libgf_ca \
+    libgf_hal \
+    libgoodixhwfingerprint \
     libgpu_aux \
     libgpud \
     libgralloc_extra \
@@ -244,6 +252,7 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libksensor \
     libladder \
+    libmifpext \
     libmipc \
     libmisight \
     libmisound \
@@ -267,9 +276,12 @@ PRODUCT_PACKAGES += \
     libpqxmlparser \
     librt_extamp_intf \
     libsensorndkbridge \
+    libsl_fp_impl \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libteecli \
     libtrm \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
     libviagpsrpc \
     libwifi-hal \
     libwifical \
@@ -318,6 +330,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V3-ndk \
     vendor.xiaomi.hardware.wifi.hostapd-V1-ndk \
     vendor.xiaomi.hardware.wifi.supplicant-V1-ndk \
+    com.fingerprints.extension \
     android.hardware.wifi@1.0-service.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     manifest_media_c2_V1_1_default.xml \
@@ -330,6 +343,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     vendor.mediatek.hardware.pq_aidl-service \
+    vendor.silead.hardware.fingerprintext@1.0-service \
     wpa_supplicant \
     lc_wifi_sar_client \
     lc_wifi_sar_server \
