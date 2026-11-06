@@ -125,16 +125,37 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CBN.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_CBN.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CMCC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_CMCC.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CU.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_CU.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Claro_Peru.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Claro_Peru.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Entel_Peru.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Entel_Peru.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_KDDI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_KDDI.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SK_Telecom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_SK_Telecom.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SoftBank.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_SoftBank.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.1-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wifi_ant_check.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wifi_ant_check.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -153,9 +174,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     arm.graphics-V3-ndk \
     libGLES_mali \
+    android.hardware.gnss-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mt6835 \
     audio.r_submix.mt6835 \
+    gps.default \
     gralloc.default \
     hwcomposer.mtk_common \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
@@ -164,6 +187,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-impl \
     vulkan.mali \
     sensors.mediatek.V2.0 \
+    libDR \
     libMtkSpeechEnh \
     lib_iir \
     libaal_mtk \
@@ -220,11 +244,14 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libksensor \
     libladder \
+    libmipc \
     libmisight \
     libmisound \
     libmml \
+    libmnl \
     libmsbc_mtk \
     libmtklimiter_vendor \
+    libmtkrillog \
     libmtkshifter_vendor \
     libneuron_platform \
     libneuron_runtime.6 \
@@ -239,8 +266,11 @@ PRODUCT_PACKAGES += \
     libpqtuning \
     libpqxmlparser \
     librt_extamp_intf \
+    libsensorndkbridge \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libtrm \
+    libviagpsrpc \
     libwifi-hal \
     libwifical \
     libwifinvram \
@@ -291,7 +321,9 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     manifest_media_c2_V1_1_default.xml \
+    gps_dump \
     android.hardware.drm-service.widevine \
+    android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.1-service \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.wifi@1.0-service-lazy \
@@ -301,7 +333,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     lc_wifi_sar_client \
     lc_wifi_sar_server \
-    mi_thermald
+    mi_thermald \
+    mnld \
+    mtk_agpsd
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
