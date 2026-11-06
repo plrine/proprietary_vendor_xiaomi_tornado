@@ -151,11 +151,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wifi_ant_check.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wifi_ant_check.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
@@ -192,6 +196,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-impl \
     vulkan.mali \
     sensors.mediatek.V2.0 \
+    vendor.mediatek.hardware.videotelephony@1.0-impl \
     libDR \
     libMtkSpeechEnh \
     lib_iir \
@@ -217,6 +222,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk \
     libbt-vendor \
     libbwc \
+    libccci_util \
     libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
@@ -245,6 +251,8 @@ PRODUCT_PACKAGES += \
     libgralloc_extra \
     libgralloc_metadata \
     libgralloctypes_mtk \
+    libgwsdv2-ril \
+    libgwsdv3-ril \
     libhfmanager \
     libion_mtk \
     libion_ulit \
@@ -259,9 +267,23 @@ PRODUCT_PACKAGES += \
     libmml \
     libmnl \
     libmsbc_mtk \
+    libmtk-fusion-ril-prop-vsim \
+    libmtk-ril \
+    libmtkares \
+    libmtkconfigutils \
+    libmtkcutils \
+    libmtkhardware_legacy \
     libmtklimiter_vendor \
+    libmtkmipc-ril \
+    libmtknetcap \
+    libmtknetutils \
+    libmtkproperty \
     libmtkrillog \
+    libmtkrilutils \
     libmtkshifter_vendor \
+    libmtksysutils \
+    libmtktinyxml \
+    libmtkutils \
     libneuron_platform \
     libneuron_runtime.6 \
     libnvram \
@@ -274,21 +296,29 @@ PRODUCT_PACKAGES += \
     libpqsharememory \
     libpqtuning \
     libpqxmlparser \
+    libratconfig \
+    librilfusion \
     librt_extamp_intf \
     libsensorndkbridge \
     libsl_fp_impl \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libstorage_otp \
+    libsysenv \
     libteecli \
     libtrm \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    libvia-ril \
     libviagpsrpc \
+    libviamipc-ril \
     libwifi-hal \
     libwifical \
     libwifinvram \
     libwifinvramdata \
     libwifitest \
+    libwpfa \
     libwvaidl \
+    libxiaomi_mtkril \
     libarm_gralloc_properties_sysprop \
     libmtk_drvb \
     sensors.touch.detect \
@@ -308,6 +338,23 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
     vendor.mediatek.hardware.mms@1.7 \
+    vendor.mediatek.hardware.mtkradioex.assist-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.data-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.em-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.ims-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.modem-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.network-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.rcs-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.se-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.sim-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
+    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
@@ -328,12 +375,15 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.pq_aidl-V1-ndk \
     vendor.mediatek.hardware.pq_aidl-V3-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.xiaomi.hardware.wifi.hostapd-V1-ndk \
     vendor.xiaomi.hardware.wifi.supplicant-V1-ndk \
     com.fingerprints.extension \
     android.hardware.wifi@1.0-service.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     manifest_media_c2_V1_1_default.xml \
+    ccci_mdinit \
+    ccci_rpcd \
     gps_dump \
     android.hardware.drm-service.widevine \
     android.hardware.gnss-service.mediatek \
@@ -342,11 +392,13 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
     hostapd \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
+    mtkfusionrild \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.silead.hardware.fingerprintext@1.0-service \
     wpa_supplicant \
     lc_wifi_sar_client \
     lc_wifi_sar_server \
+    md_monitor \
     mi_thermald \
     mnld \
     mtk_agpsd
