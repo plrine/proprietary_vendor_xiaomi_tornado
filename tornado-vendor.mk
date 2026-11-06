@@ -710,6 +710,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.thn31.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thn31.nfc.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wifi_ant_check.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wifi_ant_check.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
@@ -718,12 +719,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mrm_mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mrm_mitee.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-tms_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_EC2.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-tms_RF_GB1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_GB1.conf \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/libnfc-tms_RF_GB1_rgl.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_GB1_rgl.conf \
     vendor/xiaomi/tornado/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
@@ -1019,7 +1028,11 @@ PRODUCT_PACKAGES += \
     libarm_gralloc_properties_sysprop \
     libmtk_drvb \
     libmtkcam_streaminfo_plugin-p1stt \
+    nfc_nci.thn31nfc.tms \
     sensors.touch.detect \
+    tms-cos-dl-common \
+    tms-cos-dl-ree \
+    tms-utils \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
@@ -1087,6 +1100,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V1-ndk \
     vendor.mediatek.hardware.pq_aidl-V3-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.tms.tmsnfc_aidl-V1-ndk \
     vendor.xiaomi.hardware.micharge@1.0 \
     vendor.xiaomi.hardware.wifi.hostapd-V1-ndk \
     vendor.xiaomi.hardware.wifi.supplicant-V1-ndk \
@@ -1113,6 +1127,7 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-service.mitee@4.0 \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
+    android.hardware.nfc-service-tms \
     android.hardware.security.keymint@2.0-service.mitee \
     android.hardware.wifi@1.0-service-lazy \
     camerahalserver \
