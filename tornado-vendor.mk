@@ -710,6 +710,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.lct_touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lct_touch.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.thn31.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thn31.nfc.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wifi_ant_check.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wifi_ant_check.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
@@ -719,6 +720,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mrm_mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mrm_mitee.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
@@ -869,6 +871,7 @@ PRODUCT_PACKAGES += \
     libfeatureiodrv_mem \
     libfgauge_gm30 \
     libfile_op \
+    libforkexecwrap \
     libformatter \
     libged \
     libgf_ca \
@@ -883,6 +886,7 @@ PRODUCT_PACKAGES += \
     libgwsdv3-ril \
     libhfmanager \
     libhwm \
+    libifcutils_mtk \
     libion_mtk \
     libion_ulit \
     libispcameraca \
@@ -1147,7 +1151,9 @@ PRODUCT_PACKAGES += \
     mnld \
     mrmd_mitee \
     mtk_agpsd \
+    netdagent \
     nvram_daemon \
+    panelcolor_bin \
     tee-supplicant
 
 PRODUCT_PACKAGES += \
