@@ -125,6 +125,555 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/bpf/cameraBpfGpl.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/cameraBpfGpl.o \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_algo_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_algo_cache \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_binary_cache \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_model \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_ocl_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_ocl_cache \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/anc_night_params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_params.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/beauty_config_cn.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_config_cn.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/beauty_config_gl.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_config_gl.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/cn_sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cn_sceneDetection.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/gl_sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gl_sceneDetection.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/in_sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/in_sceneDetection.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_d/capture_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_d/capture_cache \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_d/capture_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_d/capture_model \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_d/capture_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_d/capture_policy \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_d/preview_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_d/preview_model \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_m/sg_cap_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_m/sg_cap_cache \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_m/sg_cap_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_m/sg_cap_model \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_m/sg_cap_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_m/sg_cap_policy \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/model_m/sg_pre_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_m/sg_pre_model \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc05a2_ii_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc05a2_ii_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc05a2_ii_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc05a2_ii_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc05a2_ii_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc05a2_ii_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc08a8_iii_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc08a8_iii_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc08a8_iii_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc08a8_iii_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc08a8_iii_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_gc08a8_iii_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_ov08f_ii_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_ov08f_ii_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_ov08f_ii_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_ov08f_ii_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_ov08f_ii_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_ov08f_ii_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc520cs_i_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc520cs_i_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc520cs_i_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc520cs_i_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc520cs_i_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc520cs_i_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc820cs_i_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc820cs_i_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc820cs_i_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc820cs_i_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc820cs_i_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_front_sc820cs_i_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc13a0_ii_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc13a0_ii_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc13a0_ii_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc13a0_ii_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc13a0_ii_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc13a0_ii_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc50f6_iii_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc50f6_iii_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc50f6_iii_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc50f6_iii_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc50f6_iii_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gc50f6_iii_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_imx852_ii_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_imx852_ii_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_imx852_ii_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_imx852_ii_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_imx852_ii_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_imx852_ii_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_s5kjns_i_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_s5kjns_i_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_s5kjns_i_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_s5kjns_i_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_s5kjns_i_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_s5kjns_i_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_sc1320cs_i_cn_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_sc1320cs_i_cn_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_sc1320cs_i_gl_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_sc1320cs_i_gl_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_image_refiner_tuning_params_vendor_main_sc1320cs_i_in_llhdr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_image_refiner_tuning_params_vendor_main_sc1320cs_i_in_llhdr.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc05a2_ii_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gc08a8_iii_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_ov08f_ii_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc520cs_i_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_front_sc820cs_i_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_hd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_hd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_hd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_hd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc13a0_ii_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_hd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_hd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_hd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_hd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gc50f6_iii_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_hd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_hd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_hd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_hd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_imx852_ii_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_hd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_hd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_hd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_hd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_s5kjns_i_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_2X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_2X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_2X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_2X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_2X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_2X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_3rd_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_3rd_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_3rd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_3rd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_3rd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_3rd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_4X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_4X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_4X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_4X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_4X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_4X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_6X_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_6X_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_6X_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_6X_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_6X_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_6X_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_bokeh_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_bokeh_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_bokeh_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_bokeh_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_bokeh_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_bokeh_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_f_cn_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_f_cn_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_f_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_f_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_f_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_f_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_hd_gl_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_hd_gl_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_hd_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_hd_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_in_hht.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_mfnr_tuning_params_vendor_main_sc1320cs_i_in_hht.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/102_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/102_SummerDay.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/103_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/103_Fantasy.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/104_Meet.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/105_WindSing.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/105_WindSing.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/106_Lost.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/106_Lost.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/107_Central.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/107_Central.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/108_NorthernEurope.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/108_NorthernEurope.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/109_Rome.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/109_Rome.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/110_BlackGold.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/110_BlackGold.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/111_GreenOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/111_GreenOrange.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/112_CyberPunk.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/112_CyberPunk.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/113_BlackIce.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/113_BlackIce.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/121_Bleach.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/121_Bleach.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/122_Thriller.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/122_Thriller.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/123_TealOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/123_TealOrange.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/124_JapaneseStyle.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/124_JapaneseStyle.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/125_Latin.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/125_Latin.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/126_Fantasy2.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/126_Fantasy2.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/127_Creamy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/127_Creamy.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/128_Sepia.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/128_Sepia.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/129_Vivid.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/129_Vivid.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/130_Natural.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/130_Natural.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/131_Monochrome.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/131_Monochrome.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/132_MonochromeHighContrast.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/132_MonochromeHighContrast.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/133_MonochromeBrown.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/133_MonochromeBrown.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/134_MonochromeBlue.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/134_MonochromeBlue.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/135_Classical.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/135_Classical.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/136_Filene.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/136_Filene.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/137_GreenNight.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/137_GreenNight.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/138_LiteratureAndArt.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/138_LiteratureAndArt.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/139_OrangeHoney.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/139_OrangeHoney.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/140_Romance.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/140_Romance.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/141_FR500.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/141_FR500.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/142_FE250.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/142_FE250.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/143_RedLantern.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/143_RedLantern.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/144_RedHero.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/144_RedHero.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/145_TactileBlackWhite.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/145_TactileBlackWhite.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/146_TactileGreen.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/146_TactileGreen.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/147_Neutral.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/147_Neutral.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/148_Mild.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/148_Mild.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/149_LilyWhite.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/149_LilyWhite.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/150_Bright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/150_Bright.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/151_Fresh.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/151_Fresh.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/152_Limpid.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/152_Limpid.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/153_KC64.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/153_KC64.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/154_V250.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/154_V250.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/155_H400.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/155_H400.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/156_ColdWhite.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/156_ColdWhite.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/157_Native.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/157_Native.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/158_BWClassical.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/158_BWClassical.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/159_Flowers.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/159_Flowers.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/160_Vivid_1.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/160_Vivid_1.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/161_Monsoon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/161_Monsoon.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/162_Nature.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/162_Nature.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/163_Relaxation.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/163_Relaxation.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/164_Kyoto.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/164_Kyoto.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/165_Oldalley.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/165_Oldalley.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/png/166_Reverse.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/png/166_Reverse.png \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/TStools_default_param.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/TStools_default_param.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/Version.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/Version.txt \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/default_param.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/default_param.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/model/2722133617:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/model/2722133617 \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/Material/1166466556_252005700:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/Material/1166466556_252005700 \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293 \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477 \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BASE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_BASE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_FUSE_OFFSET.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_SMOOTH_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_FACIAL_SMOOTH_PROCESS.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_BILATERAL_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_BILATERAL_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_FIX_KERNEL_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_FIX_KERNEL_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_FIX_KERNEL_WITH_MASK_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_GAUSS_FIX_KERNEL_WITH_MASK_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_HESSIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_HESSIAN_BLUR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_LUMA_TO_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_LUMA_TO_ALPHA.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BLUR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BOX_2x2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEAN_BOX_2x2.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_MEDIAN_BLUR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MERGE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_MERGE_MASK.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_Define_CHANNEL_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_Define_CHANNEL_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_VARIANCE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_FOGGY_VARIANCE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_HESSIAN_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_HESSIAN_PROCESS.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_GUIDE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_GUIDE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SINGLE_LABEL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_SINGLE_LABEL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SKIN_MASK_HSV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_SKIN_MASK_HSV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_AFFINE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_AFFINE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_P010ToRGB10A2Orientation.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_P010ToRGB10A2Orientation.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToP010Orientation.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToP010Orientation.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToRGB10A2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_RGB10A2ToRGB10A2.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_DEHAZE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_YUV2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders32/shader_YUVP010ToYUVP010.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders32/shader_YUVP010ToYUVP010.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_SMOOTH_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_SMOOTH_PROCESS.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_BILATERAL_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_BILATERAL_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_WITH_MASK_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_WITH_MASK_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_HESSIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_HESSIAN_BLUR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_LUMA_TO_ALPHA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_LUMA_TO_ALPHA.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BLUR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BOX_2x2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BOX_2x2.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEDIAN_BLUR.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEDIAN_BLUR.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MERGE_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MERGE_MASK.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_Define_CHANNEL_R_FRAMEBUFFER_FETCH_MALI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_Define_CHANNEL_R_FRAMEBUFFER_FETCH_MALI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_HESSIAN_PROCESS.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_HESSIAN_PROCESS.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SINGLE_LABEL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_SINGLE_LABEL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SKIN_MASK_HSV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_SKIN_MASK_HSV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_AFFINE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_AFFINE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_P010ToRGB10A2Orientation.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_P010ToRGB10A2Orientation.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToP010Orientation.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToP010Orientation.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToRGB10A2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToRGB10A2.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2RGBAUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_RGBA2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_DEHAZE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2RGBAUtils_SWAP_UV_DEHAZE.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Config/config_mode_all.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Config/config_mode_all.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Config/config_mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Config/config_mode_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Config/config_mode_front_fa.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Config/config_mode_front_fa.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Config/config_mode_front_lite.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Config/config_mode_front_lite.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Config/config_mode_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Config/config_mode_rear.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Config/config_mode_rear_fa.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Config/config_mode_rear_fa.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/BeautyMap.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/BeautyMap.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_capture.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/effect_preview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/FaceMask.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_capture.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/2_SkinSmoothRear/effect_preview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/3_SkinSmoothHessianRear/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/3_SkinSmoothHessianRear/FaceMask.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/3_SkinSmoothHessianRear/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/3_SkinSmoothHessianRear/effect_preview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/4_SkinSmoothFoggyRear/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/4_SkinSmoothFoggyRear/effect_preview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/mode_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear_foggy.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear_foggy.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear_hessian.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/20_FaceRetouch/mode_rear_hessian.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/LeftEye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/LeftEye.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/RightEye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/RightEye.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEye/effect.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/effect.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eye_pupil.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/eye_pupil.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/left_eye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/left_eye.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/right_eye.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/0_BrightEyeV3/right_eye.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FaceMask.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/FaceMask.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/Effects/1_FacialSmooth/effect.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/30_BasicRetouch/mode_base.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_capture.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/effect_preview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/xr.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/40_FaceStereo/Effects/0_ModeFront/xr.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/40_FaceStereo/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/40_FaceStereo/mode_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/effect.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/effect.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/filter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/Effects/0_ModeFront/filter.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/50_SkinTone/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/50_SkinTone/mode_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/Eyebrow.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/Eyebrow.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_capture.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/effect_preview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/sh.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/sh.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyy.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyy.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyz.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/yyz.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/zc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/Effects/0_ModeFront/zc.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/60_Makeup/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/60_Makeup/mode_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_capture.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_capture.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_preview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/effect_preview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/eye_refine.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/eye_refine.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/facelift.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/Effects/0_ModeFront/facelift.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/70_FacialRefine/mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/70_FacialRefine/mode_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/effect_list.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_list.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_clear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_clear.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_front_video.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_front_video.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_rear.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_rear_foggy.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_rear_foggy.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/Effect/effect_mode_rear_video.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/Effect/effect_mode_rear_video.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/render/GlobalConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/render/GlobalConfig.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_config_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_config_front.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_config_front_lite.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_config_front_lite.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_config_front_video.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_config_front_video.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_config_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_config_rear.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_config_rear_foggy.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_config_rear_foggy.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_config_rear_video.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_config_rear_video.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_param.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_param.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/resources/truesight_param_debug.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/resources/truesight_param_debug.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/singlebokeh_mecp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/singlebokeh_mecp.bin \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/dualbokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/dualbokehsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/frontbokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/frontbokehsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/frontsinglesnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/frontsinglesnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/frontsupernightsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/frontsupernightsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/manualsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/manualsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/normalpreview.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/normalpreview.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/normalsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/normalsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/rearsinglebokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/rearsinglebokehsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/satsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/satsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/superhdsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/superhdsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/superlowlightsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/superlowlightsnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/camera/xiaomi/uwsuperlowlightshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/uwsuperlowlightshot.json \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/xiaomi/tornado/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -150,6 +699,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
+    vendor/xiaomi/tornado/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/tornado/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
@@ -179,7 +729,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     arm.graphics-V3-ndk \
+    com.xiaomi.plugin.morphohdr \
     libGLES_mali \
+    android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     audio.primary.mt6835 \
@@ -196,7 +748,23 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-impl \
     vulkan.mali \
     sensors.mediatek.V2.0 \
+    vendor.mediatek.hardware.camera.atms@1.0-impl \
+    vendor.mediatek.hardware.camera.bgservice@1.1-impl \
+    vendor.mediatek.hardware.camera.ccap@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal@1.1-impl \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
+    libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face10 \
+    libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face2 \
+    libCamera_gc13a0ofilmmainiimipiraw_Zoom_Capture_face4 \
+    libCamera_s5kjnstrulymainimipirawindia_Zoom_Capture_2x_face \
+    libCamera_s5kjnstrulymainimipirawindia_Zoom_Capture_4x_face \
+    libCamera_s5kjnstrulymainimipirawindia_Zoom_Preview_2x_face \
+    libCamera_s5kjnstrulymainimipirawindia_Zoom_Preview_4x_face \
+    libCamera_sc1320cstrulymainimipiraw_Zoom_Capture_face10 \
+    libCamera_sc1320cstrulymainimipiraw_Zoom_Capture_face2 \
+    libCamera_sc1320cstrulymainimipiraw_Zoom_Capture_face4 \
     libDR \
     libMtkSpeechEnh \
     lib_iir \
@@ -204,6 +772,12 @@ PRODUCT_PACKAGES += \
     libaalservice \
     libaedv \
     libaiselector \
+    libanc_fullhdr \
+    libanc_night \
+    libanc_night_preview \
+    libanc_single_bokeh \
+    libanc_single_bokeh_rear \
+    libanc_single_rt_bokeh \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -222,6 +796,28 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk \
     libbt-vendor \
     libbwc \
+    libcam.halisp.buf \
+    libcam.halisp.common \
+    libcam.halisp \
+    libcam.isptuning \
+    libcamalgo.ispfeature \
+    libcamdrv_isp \
+    libcamera.custom.pd_buf_mgr \
+    libcamera.customae \
+    libcamera.customaf \
+    libcamera.customawb \
+    libcamera.customflk \
+    libcamera_scene \
+    libcameracustom.camera.3a \
+    libcameracustom.camera.isp \
+    libcameracustom.camera.sensors \
+    libcameracustom.camera_exif \
+    libcameracustom.eis \
+    libcameracustom.flashlight \
+    libcameracustom.lens \
+    libcameracustom.plugin \
+    libcameracustom \
+    libcameraopt \
     libccci_util \
     libcodec2_hidl_plugin \
     libcodec2_mtk_c2store \
@@ -238,8 +834,12 @@ PRODUCT_PACKAGES += \
     libcodec2_vpp_rs_plugin \
     libcomposer_ext \
     libcvsd_mtk \
+    libdip_drv \
+    libdip_postproc \
     libdisplaylog \
     libdpframework \
+    libfeature.face \
+    libfeatureiodrv_mem \
     libfile_op \
     libformatter \
     libged \
@@ -256,6 +856,7 @@ PRODUCT_PACKAGES += \
     libhfmanager \
     libion_mtk \
     libion_ulit \
+    libispcameraca \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     libksensor \
@@ -266,13 +867,87 @@ PRODUCT_PACKAGES += \
     libmisound \
     libmml \
     libmnl \
+    libmorpho_HdrChecker \
+    libmorpho_ImageRefiner \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkares \
+    libmtkcam.MITPS \
+    libmtkcam.atmseventmgr \
+    libmtkcam.debugwrapper \
+    libmtkcam.eventcallback \
+    libmtkcam.featurepipe.capture \
+    libmtkcam.featurepipe.depthmap \
+    libmtkcam.featurepipe.streaming \
+    libmtkcam.featurepipe.vsdof_util \
+    libmtkcam.logicalmodule \
+    libmtkcam_3rdparty.core \
+    libmtkcam_3rdparty.customer \
+    libmtkcam_3rdparty.mtk \
+    libmtkcam_3rdparty \
+    libmtkcam_calibration_convertor \
+    libmtkcam_calibration_provider \
+    libmtkcam_debugutils \
+    libmtkcam_device3_app \
+    libmtkcam_device3_hal \
+    libmtkcam_device3_hidl \
+    libmtkcam_device3_hidlutils \
+    libmtkcam_device3_utils \
+    libmtkcam_devicesessionpolicy \
+    libmtkcam_diputils \
+    libmtkcam_exif \
+    libmtkcam_fdWarpConvert \
+    libmtkcam_fdsan \
+    libmtkcam_fdsan_wrapper \
+    libmtkcam_fdvt \
+    libmtkcam_featurepolicy \
+    libmtkcam_featureutils \
+    libmtkcam_fwkutils \
+    libmtkcam_grallocutils \
+    libmtkcam_hwnode \
+    libmtkcam_hwutils \
+    libmtkcam_imem \
+    libmtkcam_imgbuf \
+    libmtkcam_mapping_mgr \
+    libmtkcam_metadata \
+    libmtkcam_metastore \
+    libmtkcam_mfb \
+    libmtkcam_modulefactory_aaa \
+    libmtkcam_modulefactory_custom \
+    libmtkcam_modulefactory_drv \
+    libmtkcam_modulefactory_utils \
+    libmtkcam_modulehelper \
+    libmtkcam_owe \
+    libmtkcam_perfctrl_wrapper \
+    libmtkcam_pipeline \
+    libmtkcam_pipeline_fbm \
+    libmtkcam_pipelinemodel \
+    libmtkcam_pipelinemodel_adapter \
+    libmtkcam_pipelinemodel_capture \
+    libmtkcam_pipelinemodel_isp \
+    libmtkcam_pipelinemodel_session \
+    libmtkcam_pipelinemodel_utils \
+    libmtkcam_pipelinemodel_zsl \
+    libmtkcam_pipelinepolicy-aov \
+    libmtkcam_pipelinepolicy-security \
+    libmtkcam_pipelinepolicy-smvr \
+    libmtkcam_pipelinepolicy \
+    libmtkcam_pipelinepolicy_factory \
+    libmtkcam_prerelease \
+    libmtkcam_rsc \
+    libmtkcam_scenariorecorder \
+    libmtkcam_stdutils \
+    libmtkcam_streamutils \
+    libmtkcam_synchelper \
+    libmtkcam_sysutils \
+    libmtkcam_tuning_utils \
+    libmtkcam_ulog \
     libmtkconfigutils \
     libmtkcutils \
     libmtkhardware_legacy \
+    libmtkisp_metadata \
+    libmtkisp_metadata_v2 \
     libmtklimiter_vendor \
     libmtkmipc-ril \
     libmtknetcap \
@@ -297,6 +972,7 @@ PRODUCT_PACKAGES += \
     libpqtuning \
     libpqxmlparser \
     libratconfig \
+    librcs_interface \
     librilfusion \
     librt_extamp_intf \
     libsensorndkbridge \
@@ -321,12 +997,24 @@ PRODUCT_PACKAGES += \
     libxiaomi_mtkril \
     libarm_gralloc_properties_sysprop \
     libmtk_drvb \
+    libmtkcam_streaminfo_plugin-p1stt \
     sensors.touch.detect \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    vendor.mediatek.hardware.camera.aovservice-V1-ndk \
+    vendor.mediatek.hardware.camera.atms@1.0 \
+    vendor.mediatek.hardware.camera.bgservice@1.0 \
+    vendor.mediatek.hardware.camera.bgservice@1.1 \
+    vendor.mediatek.hardware.camera.ccap@1.0 \
+    vendor.mediatek.hardware.camera.frhandler@1.0 \
+    vendor.mediatek.hardware.camera.isphal@1.0 \
+    vendor.mediatek.hardware.camera.isphal@1.1 \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0 \
+    vendor.mediatek.hardware.camera.postproc@1.0 \
+    vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
@@ -381,6 +1069,7 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension \
     android.hardware.wifi@1.0-service.xml \
     manifest_android.hardware.drm-service.widevine.xml \
+    manifest_cameraproviderhidl.xml \
     manifest_media_c2_V1_1_default.xml \
     ccci_mdinit \
     ccci_rpcd \
@@ -390,6 +1079,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@3.1-service \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.wifi@1.0-service-lazy \
+    camerahalserver \
     hostapd \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     mtkfusionrild \
